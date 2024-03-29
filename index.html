@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portafolio.css">
+    <link rel="stylesheet" href="index.css">
     <title>Portafolio de Mateo</title>
     <link rel="icon" href="icono.ico" type="ico">
     <meta name="author" content="Mateo Schaller">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0073F30VZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -27,8 +28,8 @@
         <nav>
         <ul class="ListaMenu">
             <li class="lista"><a href="#AboutMe">SOBRE MI</a></li>
-            <li class="lista"><a href="#skill">HABILIDADES</a></li>
             <li class="lista"><a href="#proyects">PROYECTOS</a></li>
+            <li class="lista"><a href="#skill">HABILIDADES</a></li>
             <li class="lista"><a href="#contact">CONTACTAME</a></li>
         </ul>
         </nav>
@@ -38,54 +39,81 @@
             <div class="tetx">
                 <p class="pp ppp" >Mateo Schaller Franich</p>
             <p class="pp">
-                Tengo 19 años, soy de Santa Fe, Argentina y actualmente me estoy especializando en Programacion pero me encuentro mas familiarizado con la parte del backend.</p>
+                Tengo 19 años, soy de Santa Fe, Argentina y actualmente me estoy especializando en Programación, me encuentro mas familiarizado con la parte del Frontend</p>
             </div>
             <div class="foto">
                <img class="imgper" alt="mateo schaller franich, programador, programacion" src="imagenmateo.jpg" /> 
             </div>
         </div>
-        <div>
-            <hr class="hr"> 
-         <div class="skill" id="skill" >
-            <h2 class="p2">HABILIDADES</h2>
-              <p class="p2">Actualmente me encuentro cursando la carrera de Técnico Superior en Programación en el Teclab Instituto Técnico Superior de Buenos Aires,tengo conocimiento en HTML, CSS, Javascript, Node, React, Python, C, C++, git , base de datos, POO y me encuentro cursando ingles.</p>
-              <div class="skillsimg">
-                  <img class="imgskill" alt="html, programacion,frontend, programador" src="html.png">
-                  <img class="imgskill" alt="css, frontend, programacion, programador" src="css.png">
-                  <img class="imgskill" alt="javascript, frontend, backend, programacion, programador" src="javascript.png">
-             </div> 
-             <div class="skillsimg">
-                  <img class="imgskill" alt="sql, mysql, sqlite3, base de datos, backend, programacion, programador" src="mySQL.png">
-                  <img class="imgskill" alt="python, backend, inteligencia artificial, programacion, programador" src="py.png">
-                  <img class="imgskill" alt="c, c++, c#, programacion, programador" src="c.png">
-             </div> 
-            <div class="skillsimg">
-                <img class="imgskill" alt="c, c++, c#, programacion, programador" src="c++.png">
-                <img class="imgskill" alt="c, git, github, gitkraken, programacion, programador" src="git.png">
-            </div>
-         </div>
-         <div class="boton">
-            <button class="boton bott">
-                <span class="span">CERTIFICADOS</span>
-            </button>
-         </div>
-         <hr class="hr">    
-        </div>
+        <hr class="hr">
         <div class="proyects" id="proyects">
             <h2 class="p2">PROYECTOS</h2>
-            <p class="p2 p1">Pagina de informacion de futbol</p>
-            <div class="proyect">
-                <a class="proyectos" href="https://mateoschaller.github.io/"><img class="ImgProyect" src="pdf.png"></a>
+            <div class="proyect-container">
+                <div class="proyect">
+                    <div class="proyectos">
+                        <img class="ImgProyect" src="akinator.svg">
+                        <div class="botones">
+                            <a href="https://github.com/Mateoschaller/pagina_tienda_codigo" class="boton"><img class="icon" src="github.png"></a>
+                            <a href="https://tineda-modelo-smarket.shop/" class=" boton"><img class="icon" src="open.png"></a>
+                        </div>
+                        <p class="p2 p1">Proyecto de una tienda online, con integracion de las apis, mercado pago y emailjs, utilizando React, Css, Html, Javascript, Node.js, axios, cors y express, con el fin de que los clientes puedan tener su tienda online rápida y segura.</p>
+                        <p class="p2 p1">2023</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <div class="proyectos">
+                        <img class="ImgProyect" src="frutas_frescas.svg">
+                        <div class="botones">
+                            <a href="https://github.com/Mateoschaller/calculadora_nutricional" class=" boton"><img class="icon" src="github.png"></a>
+                            <a href="https://calculadora-nutricional.website/" class=" boton"><img class="icon" src="open.png"></a>
+                        </div>
+                        <p class="p2 p1">Calculadora nutricional, capaz de calcular Hidratos de carbono, Proteínas ,Grasas ,Calcio ,Ca ,Fe ,Vit.A y Vit.C, utilizando React, Html y Css ,creada con el fin de facilitarle el trabajo a los estudiantes de primer año de nutrición en la UNSA. 
+                        </p>
+                        <p class="p2 p1">2023</p>
+                    </div>
+                </div>
             </div>
-            <p class="p2 p1">Calculadora nutrcicional</p>
-            <div class="proyect">
-                <a class="proyectos" href="https://www.calculadoranutriconal.com/"><img class="ImgProyect" src="frutas_frescas.png"></a>
+        </div>
+
+        <div>
+            <hr class="hr"> 
+            <div class="skill" id="skill">
+            <div class="padre">
+                <div class="padre2">
+                    <h2 class="p2">HABILIDADES</h2>
+                    <p class="p2">Actualmente me encuentro cursando la carrera de Técnico Superior en Programación en Teclab Instituto
+                        Técnico Superior de Buenos Aires y Licenciatura en Análisis y Gestión de Datos en la UNSL, tengo conocimiento en
+                        HTML, CSS, Javascript, Node, Vite, React, Python, C, C++, Git, GitHub, Tailwind, Base de Datos, POO e Inglés.</p>
+                </div>
+                <div class="padre3">
+                    <div class="padre4">
+                        <img alt="skill image"
+                            class="padre5" src="html.svg">HTML
+                    </div>
+                    <div class="padre4"><img alt="skill image"
+                            class="padre5" src="css.svg">CSS
+                    </div>
+                    <div class="padre4"><img alt="skill image"
+                            class="padre5"
+                            src="javascript.svg">JavaScript</div>
+                    <div class="padre4"><img alt="skill image"
+                            class="padre5"
+                            src="react.svg">React</div>
+                    <div class="padre4"><img alt="skill image"
+                            class="padre5" src="git.svg">Git
+                    </div>
+                    <div class="padre4"><img alt="skill image"
+                            class="padre5"
+                            src="gith.svg">GitHub</div>
+                    <div class="padre4"><img alt="skill image"
+                            class="padre5"
+                            src="node.svg">Nodejs</div>
+                    <div class="padre4"><img alt="skill image"
+                            class="padre5" src="vite.svg">Vite
+                    </div>
+                </div>
             </div>
-            <p class="p2 p1">Akinator familiar</p>
-            <div class="proyect">
-                <a class="proyectos" href="https://www.akinatorfamiliar.online/"><img class="ImgProyect" src="akinator.png"></a>
             </div>
-            
         </div>
            <hr class="hr">
            <div class="contact" id="contact">
@@ -96,5 +124,4 @@
            </div>
     </div>
       </div>
-      <script src="java.js"></script>
 </body>
